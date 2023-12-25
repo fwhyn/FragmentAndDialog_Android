@@ -1,11 +1,11 @@
-package com.fwhyn.mytempapp.common.dialog
+package com.fwhyn.fragmentanddialog.common.dialog
 
 import android.app.Dialog
 import android.os.Bundle
 import androidx.fragment.app.DialogFragment
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
-import com.fwhyn.mytempapp.common.BaseFragment.Companion.dismissFragment
+import com.fwhyn.fragmentanddialog.common.BaseFragment.Companion.dismissFragment
 
 class CustomDialog private constructor() : DialogFragment() {
 

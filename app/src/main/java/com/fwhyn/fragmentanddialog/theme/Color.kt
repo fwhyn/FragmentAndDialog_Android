@@ -1,4 +1,4 @@
-package com.fwhyn.mytempapp.theme
+package com.fwhyn.fragmentanddialog.theme
 
 import androidx.compose.ui.graphics.Color
 

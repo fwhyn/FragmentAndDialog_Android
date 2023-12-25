@@ -1,4 +1,4 @@
-package com.fwhyn.mytempapp.helper
+package com.fwhyn.fragmentanddialog.helper
 
 import android.content.Context
 import android.widget.Toast

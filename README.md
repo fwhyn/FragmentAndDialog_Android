@@ -1,1 +1,1 @@
-# MyTemplateApp_Android
+# FragmentAndDialog_Android

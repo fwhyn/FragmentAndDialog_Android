@@ -1,4 +1,4 @@
-package com.fwhyn.mytempapp
+package com.fwhyn.fragmentanddialog
 
 import org.junit.Assert.assertEquals
 import org.junit.Test

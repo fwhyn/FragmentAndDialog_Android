@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    val moduleName = "com.fwhyn.mytempapp"
+    val moduleName = "com.fwhyn.fragmentanddialog"
 
     val lSdk: Int by rootProject.extra
     val mSdk: Int by rootProject.extra

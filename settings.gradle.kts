@@ -13,7 +13,7 @@ pluginManagement {
 //    }
 //}
 
-rootProject.name = "My Template App"
+rootProject.name = "Fragment And Dialog"
 include(":app")
 include(":data")
 include(":domain")

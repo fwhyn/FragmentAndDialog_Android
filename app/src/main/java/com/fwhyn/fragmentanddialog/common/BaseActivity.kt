@@ -1,4 +1,4 @@
-package com.fwhyn.mytempapp.common
+package com.fwhyn.fragmentanddialog.common
 
 import androidx.activity.ComponentActivity
 

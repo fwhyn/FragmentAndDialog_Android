@@ -1,4 +1,4 @@
-package com.fwhyn.mytempapp.theme
+package com.fwhyn.fragmentanddialog.theme
 
 import android.app.Activity
 import android.os.Build
@@ -38,7 +38,7 @@ private val LightColorScheme = lightColorScheme(
 )
 
 @Composable
-fun MyTemplateAppTheme(
+fun FragmentAndDialogTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
     // Dynamic color is available on Android 12+
     dynamicColor: Boolean = true,

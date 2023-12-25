@@ -1,4 +1,4 @@
-package com.fwhyn.mytempapp.main
+package com.fwhyn.fragmentanddialog.main
 
 import android.os.Bundle
 import androidx.activity.compose.setContent
@@ -10,8 +10,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
-import com.fwhyn.mytempapp.common.BaseActivity
-import com.fwhyn.mytempapp.theme.MyTemplateAppTheme
+import com.fwhyn.fragmentanddialog.common.BaseActivity
+import com.fwhyn.fragmentanddialog.theme.FragmentAndDialogTheme
 
 class MainActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,7 +20,7 @@ class MainActivity : BaseActivity() {
         val splashScreen = installSplashScreen()
 
         setContent {
-            MyTemplateAppTheme {
+            FragmentAndDialogTheme {
                 // A surface container using the 'background' color from the theme
                 Surface(
                     modifier = Modifier.fillMaxSize(),
@@ -44,7 +44,7 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
-    MyTemplateAppTheme {
+    FragmentAndDialogTheme {
         Greeting("Android")
     }
 }

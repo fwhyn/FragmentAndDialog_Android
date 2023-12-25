@@ -54,7 +54,7 @@ androidx-compose-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-
 
 # ----------------------------------------------------------------------------------------------------------------------
 [plugins]
-android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
+com-android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
 com-android-library = { id = "com.android.library", version.ref = "androidGradlePlugin" }
 org-jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "orgJetbrainsKotlinAndroid" }
 

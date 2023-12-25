@@ -13,7 +13,8 @@ orgJetbrainsKotlinx = "1.6.4"
 androidxComposeBom = "2023.03.00"
 
 # Plugin
-androidGradlePlugin = "8.1.2"
+androidGradlePlugin = "8.1.1"
+orgJetbrainsKotlinAndroid = "1.8.10"
 
 # ----------------------------------------------------------------
 # Test
@@ -54,6 +55,8 @@ androidx-compose-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-
 # ----------------------------------------------------------------------------------------------------------------------
 [plugins]
 android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
+com-android-library = { id = "com.android.library", version.ref = "androidGradlePlugin" }
+org-jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "orgJetbrainsKotlinAndroid" }
 
 
 

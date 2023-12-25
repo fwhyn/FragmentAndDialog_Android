@@ -1,12 +1,13 @@
+@Suppress("DSL_SCOPE_VIOLATION") // TODO: Remove once KTIJ-19369 is fixed
 plugins {
-    id("com.android.library")
-    id("org.jetbrains.kotlin.android")
+    alias(libs.plugins.com.android.library)
+    alias(libs.plugins.org.jetbrains.kotlin.android)
 }
 
 android {
     val javaVersion: JavaVersion by rootProject.extra
 
-    namespace = "com.fwhyn.data"
+    namespace = "com.fwhyn.fad"
     compileSdk = rootProject.extra["mSdk"] as Int
 
     defaultConfig {
@@ -44,4 +45,5 @@ dependencies {
     // ----------------------------------------------------------------
     // Test
     testImplementation(libs.junit)
+    androidTestImplementation(libs.androidx.test.ext.junit)
 }

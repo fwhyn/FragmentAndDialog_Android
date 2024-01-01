@@ -5,13 +5,18 @@ plugins {
 }
 
 android {
+    val lSdk = rootProject.extra["lSdk"] as Int
     val javaVersion: JavaVersion by rootProject.extra
 
     namespace = "com.fwhyn.fad"
     compileSdk = rootProject.extra["mSdk"] as Int
 
     defaultConfig {
-        minSdk = rootProject.extra["lSdk"] as Int
+        minSdk = lSdk
+
+        aarMetadata {
+            minCompileSdk = lSdk
+        }
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")
@@ -34,6 +39,17 @@ android {
 
     kotlinOptions {
         jvmTarget = javaVersion.toString()
+    }
+
+    testFixtures {
+        enable = true
+    }
+
+    publishing {
+        multipleVariants {
+            allVariants()
+            withJavadocJar()
+        }
     }
 }
 

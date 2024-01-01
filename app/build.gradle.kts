@@ -64,6 +64,11 @@ dependencies {
     implementation(libs.androidx.core.splashscreen)
     implementation(libs.androidx.fragment.ktx)
 
+    // Module
+    implementation(project(mapOf("path" to ":domain")))
+    implementation(project(mapOf("path" to ":data")))
+    implementation(project(mapOf("path" to ":FAD")))
+
     // Compose
     implementation(platform(libs.androidx.compose.bom))
     implementation(libs.bundles.androidx.compose)

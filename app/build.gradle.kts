@@ -67,7 +67,7 @@ dependencies {
     // Module
     implementation(project(mapOf("path" to ":domain")))
     implementation(project(mapOf("path" to ":data")))
-    implementation(project(mapOf("path" to ":FAD")))
+    implementation(project(mapOf("path" to ":fad")))
 
     // Compose
     implementation(platform(libs.androidx.compose.bom))

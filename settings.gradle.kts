@@ -17,4 +17,4 @@ rootProject.name = "Fragment And Dialog"
 include(":app")
 include(":data")
 include(":domain")
-include(":FAD")
+include(":fad")

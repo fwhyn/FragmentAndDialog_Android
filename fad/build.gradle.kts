@@ -71,7 +71,7 @@ publishing {
     repositories {
         maven {
             name = "fad"
-            url = uri("https://github.com/fwhyn/FragmentAndDialog_Android.git")
+            url = uri("https://github.com/fwhyn/FragmentAndDialog_Android/tree/main")
         }
     }
 }

@@ -47,7 +47,7 @@ android {
 dependencies {
     // ----------------------------------------------------------------
     // Main
-    implementation(libs.androidx.annotation.jvm)
+    implementation(libs.androidx.annotation)
 
     // ----------------------------------------------------------------
     // Test

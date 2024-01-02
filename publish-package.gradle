@@ -44,25 +44,30 @@ afterEvaluate {
 
                 from components.release
 
-//                artifact androidJavadocJar
-//                artifact javaSourcesJar
+                artifact androidJavadocJar
+                artifact javaSourcesJar
 
                 groupId GROUP_ID
                 version VERSION_NAME
+
                 pom {
-                    name = artifactId
+                    name = POM_NAME
                     description = POM_DESCRIPTION
-                    url = ''
+                    url = POM_URL
+
                     licenses {
                         license {
-                            name = ''
-                            url = ''
+                            name = POM_LICENCE_NAME
+                            url = POM_LICENCE_URL
                         }
                     }
+
                     scm {
                         connection = POM_SCM_CONNECTION
-                        url = 'https://github.com/GeofriendTech/AndroidUtils.git'
+                        developerConnection = POM_SCM_DEV_CONNECTION
+                        url = POM_SCM_URL
                     }
+
                     developers {
                         developer {
                             id = POM_DEVELOPER_ID
@@ -76,26 +81,9 @@ afterEvaluate {
 
         repositories {
             maven {
-                name = "SonatypeSnapshot"
-
-//                def releasesRepoUrl = "https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/"
-//                def snapshotsRepoUrl = "https://s01.oss.sonatype.org/content/repositories/snapshots/"
-//                url = version.endsWith('SNAPSHOT') ? snapshotsRepoUrl : releasesRepoUrl
-                url = "https://s01.oss.sonatype.org/content/repositories/snapshots/"
-
-                credentials {
-                    username ossrhUsername
-                    password ossrhPassword
-                }
-            }
-
-            maven {
-                name = "sonatype"
-
-//                def releasesRepoUrl = "https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/"
-//                def snapshotsRepoUrl = "https://s01.oss.sonatype.org/content/repositories/snapshots/"
-//                url = version.endsWith('SNAPSHOT') ? snapshotsRepoUrl : releasesRepoUrl
-                url = "https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/"
+                def releasesRepoUrl = "https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/"
+                def snapshotsRepoUrl = "https://s01.oss.sonatype.org/content/repositories/snapshots/"
+                url = version.endsWith('SNAPSHOT') ? snapshotsRepoUrl : releasesRepoUrl
 
                 credentials {
                     username ossrhUsername
@@ -109,5 +97,3 @@ afterEvaluate {
 signing {
     sign publishing.publications
 }
-
-// https://medium.com/@vivekvashistha/how-to-publish-android-libraries-on-maven-central-in-2023-a96e3c327008

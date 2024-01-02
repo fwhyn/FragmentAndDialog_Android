@@ -5,6 +5,7 @@
 androidxActivity = "1.8.0"
 androidxFragment = "1.6.2"
 androidxCore = "1.0.1"
+androidxAnnotation = "1.7.1"
 
 # Coroutine
 orgJetbrainsKotlinx = "1.6.4"
@@ -28,6 +29,7 @@ androidxTestEspresso = "3.5.1"
 # Main
 androidx-fragment-ktx = { group = "androidx.fragment", name = "fragment-ktx", version.ref = "androidxFragment" }
 androidx-core-splashscreen = { group = "androidx.core", name = "core-splashscreen", version.ref = "androidxCore" }
+androidx-annotation-jvm = { group = "androidx.annotation", name = "annotation-jvm", version.ref = "androidxAnnotation" }
 
 # Coroutine
 org-jetbrains-kotlinx-coroutines = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "orgJetbrainsKotlinx" }

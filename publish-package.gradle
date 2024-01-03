@@ -44,8 +44,8 @@ afterEvaluate {
 
                 from components.release
 
-                artifact androidJavadocJar
-                artifact javaSourcesJar
+                // artifact androidJavadocJar
+                // artifact javaSourcesJar
 
                 groupId GROUP_ID
                 version VERSION_NAME

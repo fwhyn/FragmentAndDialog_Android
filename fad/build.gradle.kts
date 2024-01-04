@@ -48,6 +48,7 @@ dependencies {
     // ----------------------------------------------------------------
     // Main
     implementation(libs.androidx.annotation)
+    implementation(libs.androidx.fragment.ktx)
 
     // ----------------------------------------------------------------
     // Test

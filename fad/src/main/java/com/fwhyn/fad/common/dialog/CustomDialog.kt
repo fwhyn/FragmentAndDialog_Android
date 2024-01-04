@@ -1,11 +1,11 @@
-package com.fwhyn.fragmentanddialog.common.dialog
+package com.fwhyn.fad.common.dialog
 
 import android.app.Dialog
 import android.os.Bundle
 import androidx.fragment.app.DialogFragment
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
-import com.fwhyn.fragmentanddialog.common.BaseFragment.Companion.dismissFragment
+import com.fwhyn.fad.common.BaseFragment.Companion.dismissFragment
 
 class CustomDialog private constructor() : DialogFragment() {
 
@@ -13,7 +13,7 @@ class CustomDialog private constructor() : DialogFragment() {
 
         private const val PARENT_FRAGMENT_TAG = "PARENT_FRAGMENT_TAG"
 
-        fun show(fragmentManager: FragmentManager, tag: String, parentFragmentTag: String? = null) {
+        fun FragmentManager.show(tag: String, parentFragmentTag: String? = null) {
             val dialogFragment = CustomDialog()
 
             parentFragmentTag?.let {
@@ -22,11 +22,11 @@ class CustomDialog private constructor() : DialogFragment() {
                 dialogFragment.arguments = arguments
             }
 
-            dialogFragment.show(fragmentManager, tag)
+            dialogFragment.show(this, tag)
         }
 
-        fun dismiss(fragmentManager: FragmentManager, tag: String) {
-            fragmentManager.dismissFragment(tag)
+        fun FragmentManager.dismiss(tag: String) {
+            dismissFragment(tag)
         }
     }
 

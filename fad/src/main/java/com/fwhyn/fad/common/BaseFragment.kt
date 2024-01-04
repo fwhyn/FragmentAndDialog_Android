@@ -1,4 +1,4 @@
-package com.fwhyn.fragmentanddialog.common
+package com.fwhyn.fad.common
 
 import android.os.Bundle
 import androidx.annotation.IdRes

@@ -25,13 +25,13 @@ class MainActivity : BaseActivity() {
         super.onCreate(savedInstanceState)
 
         setContent {
-            Content()
+            MainActivityContent()
         }
     }
 }
 
 @Composable
-fun Content() {
+fun MainActivityContent() {
     FragmentAndDialogTheme {
         // A surface container using the 'background' color from the theme
         Surface(
@@ -72,6 +72,6 @@ fun ElevatedButtonExample(onClick: () -> Unit) {
 
 @Preview(showBackground = true, widthDp = 412, heightDp = 915)
 @Composable
-fun ContentPreview() {
-    Content()
+fun MainActivityContentPreview() {
+    MainActivityContent()
 }

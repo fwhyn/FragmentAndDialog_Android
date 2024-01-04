@@ -18,8 +18,8 @@ android {
         applicationId = moduleName
         minSdk = lSdk
         targetSdk = mSdk
-        versionCode = 1000100
-        versionName = "1.0.1"
+        versionCode = project.property("VERSION_CODE") as? Int
+        versionName = project.property("VERSION_NAME") as? String
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {

@@ -28,6 +28,11 @@ class MainActivity : BaseActivity() {
             MainActivityContent()
         }
     }
+
+    // ----------------------------------------------------------------
+    fun showDialog() {
+
+    }
 }
 
 @Composable
